@@ -1,0 +1,688 @@
+<link rel="stylesheet" type="text/css" href="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/styles/styles.css"/>
+<link rel="stylesheet" type="text/css" href="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/frameworks/modal/remodal.css"/>
+<link rel="stylesheet" type="text/css" href="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/frameworks/modal/remodal-default-theme.css"/>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+
+<script type="text/javascript" src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/frameworks/modal/remodal.js"></script>
+<script type="text/javascript" src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/js/js.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.bundle.js"></script>
+<script type="text/javascript" src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/frameworks/datejs/moment.js"></script>
+
+
+<!-- Add ons for the video player -->
+<script type='text/javascript' src='https://connect.gsk.com/sites/Cx/Documents/DigitalComms/HomePageDesign/unitegallery/js/unitegallery.min.js'></script>	
+
+<link rel='stylesheet' href='https://connect.gsk.com/sites/Cx/Documents/DigitalComms/HomePageDesign/unitegallery/css/unite-gallery.css' type='text/css' />
+
+<script type='text/javascript' src='https://connect.gsk.com/sites/Cx/Documents/DigitalComms/HomePageDesign/unitegallery/themes/default/ug-theme-default.js'></script>
+<link rel='stylesheet' 		  href='https://connect.gsk.com/sites/Cx/Documents/DigitalComms/HomePageDesign/unitegallery/themes/default/ug-theme-default.css' type='text/css' />
+
+<script type='text/javascript' src='https://connect.gsk.com/sites/Cx/Documents/DigitalComms/HomePageDesign/unitegallery/themes/video/ug-theme-video.js'></script>
+<link rel='stylesheet' 	href='https://connect.gsk.com/sites/Cx/Documents/DigitalComms/HomePageDesign/unitegallery/themes/video/skin-right-no-thumb.css' type='text/css' />
+<link rel='stylesheet' 	href='https://connect.gsk.com/sites/Cx/Documents/DigitalComms/HomePageDesign/unitegallery/themes/video/skin-right-thumb.css' type='text/css' />
+<link rel='stylesheet' 	href='https://connect.gsk.com/sites/Cx/Documents/DigitalComms/HomePageDesign/unitegallery/themes/video/skin-right-title-only.css' type='text/css' />
+<link rel='stylesheet' href='https://connect.gsk.com/sites/Cx/Documents/DigitalComms/HomePageDesign/unitegallery/themes/video/skin-bottom-text.css' type='text/css' />
+
+<div class="remodal-bg">
+	<div class="wrapper">
+		<div class="controls">
+			<div class="control-holder"></div>
+			<select class="controls-month"></select>
+			<div class="percentcomplete"><div class="thetext"></div><div class="icon"><img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/ajax-loader.gif"/></div></div>
+		</div>
+		<div class="leftcolumn">
+			<div class="section">
+				<div class="bigfeature1">
+					<div class="nodata">No data available</div>
+					<div class="total">
+						<div class="overlay"><span class="thenumber"></span><span class="percent">%</span><span class="subtext"></span></div>
+						
+						<div class="canvasholder"></div>
+						
+					</div>
+					<div class="breakdown">
+						<div class="canvasholder1"></div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="rightcolumn">
+
+			<div class="container">
+
+				<ul class="tabs">
+					<li class="tab-link current" data-tab="tab-1">Overview</li>
+					<li class="tab-link" data-tab="tab-2">Leader led activity</li>
+					<li class="tab-link" data-tab="tab-3">Email activity</li>
+					<li class="tab-link" data-tab="tab-4">Core Intranet activity</li>
+					<li class="tab-link" data-tab="tab-5">News articles</li>
+					<li class="tab-link" data-tab="tab-6">Survey data</li>
+					<li class="tab-link toolkitlink" data-tab="tab-7">Toolkit</li>
+				</ul>
+
+				<div id="tab-1" class="tab-content current activitylist summary">
+					<div class="right-column">
+						<div class="row overlayimage">
+							<div class="six alpha omega">
+								<img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/headerocerlay.png" />
+							</div>
+						<div class="row specialrow">
+							<div class="one orange alpha"></div>
+							<div class="one orange"></div>
+							<div class="one orange"></div>
+							<div class="one orange"></div>
+							<div class="one orange"></div>
+							<div class="one orange omega"></div>			
+						</div>							
+						</div>
+						<div class="row KPIs">
+							<div class="one alpha">
+								<ul>
+									<li><div class="detail"></div><div class="description">How well attended were the leader led events? </div></li>
+									<li><div class="detail"></div><div class="description">How much traffic did we generate? </div></li>
+									<li><div class="detail"></div><div class="description">Did people open the email so they can engage with it? </div></li>
+									<li><div class="detail"></div><div class="description">How many news articles were read by more than 75% of the intended audience? </div></li>
+									<li><div class="detail"></div><div class="description">How many employees had eyeballs on core content? </div></li>
+								</ul>
+							</div>
+							<div class="one">
+								<ul>
+									<li><div class="detail"></div><div class="description">How well are we mixing the core content with more tactical items?  </div></li>
+									<li><div class="detail"></div><div class="description">Are we respecting the employees' mailbox by bundling content? </div></li>
+									<li><div class="detail"></div><div class="description">Total time our employees have spent on core content </div></li>
+									<li><div class="detail"></div><div class="description">To what degree did the employees retain key messages? </div></li>
+									<li><div class="detail"></div><div class="description">Survey Question: My manager regularly holds development and career conversations with me</div></li>									
+								</ul>
+							</div>
+							<div class="one">
+								<ul>
+									<li><div class="detail"></div><div class="description">To what degree did the employees find our content relevant? </div></li>
+									<li><div class="detail"></div><div class="description">Survey Question: I feel my business is ambitious</div></li>
+									<li><div class="detail"></div><div class="description">Survey Question: I enjoy my work</div></li>
+								</ul>
+							</div>
+							<div class="one">
+								<ul>
+									<li><div class="detail"></div><div class="description">How many leader led events occured? </div></li>
+									<li><div class="detail"></div><div class="description">Quick pulse check - an emotional measure.  How are they feeling?  Apprehensive, excited?</div></li>
+									<li><div class="detail"></div><div class="description">Survey Question: I have the confidence that GSK has what it takes to beat the competition in the medium to long term</div></li>
+									<li><div class="detail"></div><div class="description">Survey Question: We celebrate success regularly</div></li>									
+								</ul>
+							</div>
+							<div class="one">
+								<ul>
+									<li><div class="detail"></div><div class="description">How motivated are people on the back of an interaction with our content </div></li>
+									<li><div class="detail"></div><div class="description">Survey Question: Considering everything I am satisfied with GSK at present</div></li>
+									<li><div class="detail"></div><div class="description">Survey Question: I am proud to work for GSK</div></li>
+									<li><div class="detail"></div><div class="description">Survey Question: I rarely think about looking for a new job with a another company</div></li>
+									<li><div class="detail"></div><div class="description">Survey Question: Leaders in GSK communicate a vision of the future that motivates me</div></li>
+
+								</ul>
+							</div>
+							<div class="one omega">
+								<ul>
+									<li><div class="detail"></div><div class="description">Survey Question: I would recommend GSK as a great place to work</div></li>
+								</ul>
+							</div>			
+						</div>		
+					
+					</div>
+					
+					<div style="clear:both;"></div>
+					<ul></ul>
+					<div style="clear:both;"></div>
+				</div>				
+				<div id="tab-2" class="tab-content activitylist leaderled">
+					<div class="summaryzone"></div>
+					<div style="clear:both;"></div>
+					<ul></ul>
+					<div style="clear:both;"></div>
+				</div>
+				<div id="tab-3" class="tab-content activitylist email">
+					<div class="summaryzone"></div>
+					<ul></ul>
+					<div style="clear:both;"></div>
+				</div>
+				<div id="tab-4" class="tab-content activitylist intranet">
+					<div class="summaryzone"></div>
+					<ul></ul>
+					<div style="clear:both;"></div>
+				</div>
+				<div id="tab-5" class="tab-content activitylist news">
+					<div class="summaryzone"></div>
+					<ul></ul>
+					<div style="clear:both;"></div>
+				</div>
+				<div id="tab-6" class="tab-content activitylist survey">
+					<div class="summaryzone"></div>
+					<ul></ul>
+					<div style="clear:both;"></div>
+				</div>
+				<div id="tab-7" class="tab-content toolkitcontent">
+					<div class="videowrapper">
+						<div id="gallery" style="display:none;"></div>
+					</div>
+					
+					<div style="clear:both;"></div>
+					
+					<div class="toolkitleftcolumn">
+						<div id="accordion">
+							<h3>Running a leader led activity</h3>
+							<div>
+								<h4>What do we mean by "Leader led activity"</h4>
+								<p>
+								Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+								ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+								amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+								odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+								</p>
+								<h4>What we need from you</h4>
+								<p>
+								Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+								ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+								amet, nunc.
+								</p>
+								<ul>
+									<li>How many people did you invite?</li>
+									<li>How many people attended the event?</li>
+									<li>What were the topics covered?</li>
+									<li>Is there any special context we should be aware of?</li>
+								</ul>
+								<p>
+								As a follow up to the activity, we'd also like to understand:
+								</p>
+								<ul>
+									<li>Retention - How much of the content shared really connected and was retained by the attendees?</li>
+									<li>Relevance - What did people think?  Was it a good use of their time?</li>
+									<li>Pulse check - Trying to get a sense of how people are feeling.  Are they optimistic or pessimistic?</li>
+									<li>Motivation - Are the attendees motivated by what they heard?</li>
+								</ul>								
+								<h4>Guidance counting your attendeed</h4>
+								<p>
+								We know it's difficult to know <italic>exactly</italic> how many people attended, but give us a sense.  Live meetings and broadcast meetings can be particularly difficult but if we could rely on you to use your proessional judgement to think through roughly what the attendace is, that is all we're after.
+								</p>
+								<h4>Guidance calculating a retention score</h4>
+								<p>
+								Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+								ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+								amet, nunc.
+								</p>
+								<h4>Guidance calculating a relevance score</h4>
+								<p>
+								Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+								ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+								amet, nunc.
+								</p>
+								<h4>Guidance calculating a pulse check score</h4>
+								<p>
+								Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+								ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+								amet, nunc.
+								</p>
+								<h4>Guidance calculating a motivation score</h4>
+								<p>
+								Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+								ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+								amet, nunc.
+								</p>
+								<h4>Tools to make your activity pop</h4>
+								<div class="image"><a href="http://www.meetoo.com/" target="_blank"><img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/meetoo.png"/></a></div>
+								<p>
+								Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+								ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+								amet, nunc.
+								</p>
+								<div class="image"><a href="http://www.yammer.com/" target="_blank"><img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/yammer.png"/></a></div>
+								<p>
+								Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+								ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+								amet, nunc.
+								</p>								
+							</div>
+							<h3>Objectives for your townhall - great examples</h3>
+							<div>
+								<p>
+								Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+								purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+								velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+								suscipit faucibus urna.
+								</p>
+							</div>							
+							<h3>Post event questions</h3>
+							<div>
+								<p>
+								Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+								purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+								velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+								suscipit faucibus urna.
+								</p>
+								<ul>
+									<li>Question 1</li>
+									<li>Question 1</li>
+									<li>Question 1</li>
+								</ul>
+							</div>							
+							<h3>Measuring your emails</h3>
+							<div>
+								<p>
+								Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+								purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+								velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+								suscipit faucibus urna.
+								</p>
+							</div>
+							<h3>Measuring your intranet site</h3>
+							<div>
+								<p>
+								Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+								purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+								velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+								suscipit faucibus urna.
+								</p>
+							</div>	
+							<h3>Measuring your news articles</h3>
+							<div>
+								<p>
+								Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+								purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+								velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+								suscipit faucibus urna.
+								</p>
+							</div>	
+							<h3>How the survey results roll in</h3>
+							<div>
+								<p>
+								Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+								purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+								velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+								suscipit faucibus urna.
+								</p>
+							</div>								
+						</div>  
+					</div>					
+					<div style="clear:both;"></div>
+				</div>								
+
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+<!-- 
+==============================================================================================================
+==============================================================================================================
+==============================================================================================================
+
+												MODAL POPUPS
+
+==============================================================================================================
+==============================================================================================================
+==============================================================================================================
+
+-->
+
+<div class="remodal" data-remodal-id="modal">
+	<button data-remodal-action="close" class="remodal-close"></button>
+	<div class="content">
+		<div class="innercontent">
+			<h1>Add an activity</h1>
+			<p>
+				<ul class="activitytype">
+					<li><img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/1.jpg"/><div class="activitylabel">Leader led</div></li>
+					<li><img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/2.jpg"/><div class="activitylabel">Email</div></li>
+					<li><img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/3.jpg"/><div class="activitylabel">Intranet</div></li>
+					<li><img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/4.jpg"/><div class="activitylabel">News</div></li>
+				</ul>
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="remodal remodal-leader" data-remodal-id="leader">
+	<button data-remodal-action="close" class="remodal-close"></button>
+	<div class="content">
+		<div class="innercontent">
+			<div class="activitytypeicon"><img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/1.png" /></div>
+			<h1>New leader Led activity</h1>
+			<div class="panel1" id="1">
+				<div class="progress">Step 1 of 3</div>
+				<h2>Tell us about your event</h2>
+				<div class="questions">
+					<div class="question" style="float: left;padding: 11px 14px 0 0;">Scope of activity</div><div class="buselectorplaceholder" style="float:left;"></div>
+					<div class="question"></div><input class="long" type="text" name="activity" placeholder="Activity name">
+					<div class="question"></div><input class="medium" type="text" name="date" id="datepicker1" placeholder="When did the event take place"><div class="helper"><strong>Note:</strong> Leader led data lasts for 4 months</div>
+					<div class="fleft"><div class="question">Topics/Themes <span style="font-style:italic;">(one per line)</span></div><textarea name="topics" cols="38" rows="5"></textarea></div>					
+					<div class="fleft" style="padding-left:18px;"><div class="question">Optional Notes</div><textarea name="notes" cols="38" rows="5"></textarea></div>
+					<div style="clear:both;"></div>
+				</div>
+				<div class="buttongroup">
+					<button class="remodal-confirm next">Next</button>
+				</div>
+			</div>
+			<div class="panel2" id="2">
+				<div class="progress">Step 2 of 3</div>
+				<h2>Tell us how it went</h2>
+				<div class="questions">
+					<div class="fleft"><div class="question">Invited</div><input class="medium" type="text" name="invited" placeholder="How many people were invited?"></div>
+					<div class="fleft"><div class="question">Attended</div><input class="medium" type="text" name="attended" placeholder="How many people attended?"></div>
+					<div style="clear:both;"></div>
+					<!-- <div class="question">Questions</div><input class="medium" type="text" name="questions" placeholder="How many questions were asked?"> -->
+				</div>
+				<div class="buttongroup">
+					<button class="remodal-cancel back">Back</button>
+					<button class="remodal-confirm next">Next</button>
+				</div>
+			</div>
+			<div class="panel3" id="3">
+				<div class="progress">Step 3 of 3</div>
+				<h2>What did people think?</h2>
+				<div class="questions">
+					<div class="fleft"><div class="question">Retention</div><input class="medium" type="text" name="retention" placeholder="Retention score"> %</div>
+					<div class="fleft"><div class="question">Relevance</div><input class="medium" type="text" name="relevance" placeholder="Relevance score"> %</div>
+					<div class="fleft"><div class="question">Pulse check</div><input class="medium" type="text" name="Pulsecheck" placeholder="Pulse check"> %</div>
+					<div class="fleft"><div class="question">Motivation</div><input class="medium" type="text" name="motivation" placeholder="Motivation score"> %</div>					
+					<div style="clear:both;"></div>
+				</div>
+				<div class="buttongroup">
+					<button class="remodal-cancel back">Back</button>
+					<button class="remodal-confirm" id="save-leader">Save</button>
+				</div>
+			</div>
+			<div class="panel4" id="4">
+				<h2>Thank you</h2>
+				<div class="questions">
+					<div class="thanks"><p>Your activity has been saved.</p></div>
+				</div>
+				<div class="buttongroup">
+					<button data-remodal-action="confirm" class="remodal-confirm">Finish</button>
+				</div>
+			</div>			
+		</div>
+	</div>
+</div>
+
+<div class="remodal remodal-email" data-remodal-id="email">
+	<button data-remodal-action="close" class="remodal-close"></button>
+	<div class="content">
+		<div class="innercontent">
+			<div class="activitytypeicon"><img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/2.png" /></div>		
+			<h1>Email activity</h1>
+			<div class="panel1" id="1">
+			<div class="progress">Step 1 of 3</div>
+				<h2>Did you...</h2>
+
+				<div class="bigwrapper">
+					<div class="column">
+						<div class="innerbutton isemail">
+							<img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/large-email.png"/>
+							<div>Send your own email</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="innerbutton iscontent">
+							<img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/large-content.png"/>
+							<div>Contribute content to another email</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="optional">
+					<div class="question">Which email did you contribute to?</div><select class="allemails"></select>
+				</div>
+				
+				<div class="buttongroup">
+					<button class="remodal-confirm next">Next</button>
+				</div>
+			</div>
+			<div class="panel2" id="2">
+			
+				<div class="progress">Step 2 of 3</div>
+				<h2>Add new email</h2>	
+				<div class="thiswasanemail">
+					<div class="questions">
+						<div class="question" style="float: left;padding: 12px 14px 0 0;">Scope of audience</div><div class="buselectorplaceholder" style="float:left;"></div>
+						<div class="question"></div><input class="long" type="text" name="activity" placeholder="Email subject line">
+						<div class="question">When did you send the email?</div><input class="medium" type="text" name="date" id="datepicker2" placeholder="When did you send the email?">
+						<div style="clear:both;"></div>
+						<div class="fleft"><div class="question">Topics/Themes <span style="font-style:italic;">(one per line)</span></div><textarea name="topics" cols="38" rows="5"></textarea></div>					
+						<div class="fleft" style="padding-left:18px;"><div class="question">Optional Notes</div><textarea name="notes" cols="38" rows="5"></textarea></div>
+						<div style="clear:both;"></div>					
+					</div>				
+				</div>
+				<div class="thiswascontent">
+					<div class="questions">
+						<div class="question" style="float: left;padding: 11px 14px 0 0;">Scope of audience</div><div class="buselectorplaceholder" style="float:left;"></div>
+						<div class="fleft"><div class="question">Topics/Themes <span style="font-style:italic;">(one per line)</span></div><textarea name="topics" cols="38" rows="5"></textarea></div>					
+						<div class="fleft" style="padding-left:18px;"><div class="question">Optional Notes</div><textarea name="notes" cols="38" rows="5"></textarea></div>
+					</div>
+				</div>
+				<div class="buttongroup">
+					<button class="remodal-cancel back">Back</button>
+					<button class="remodal-confirm next">Next</button>
+				</div>
+			</div>
+			<div class="panel3" id="3">
+				<div class="progress">Step 3 of 3</div>
+				<h2>How did it go?</h2>
+				
+				<div class="questions">
+					<div class="fleft"><div class="question">Emails delivered</div><input class="medium" type="text" name="delivered" placeholder="Total number of emails delivered"></div>
+					<div class="fleft"><div class="question">Open Rate</div><input class="medium" type="text" name="openrate" placeholder="Open rate"> %</div>
+					<div class="fleft"><div class="question">Click Through Rate (CTR) </div><input class="medium" type="text" name="ctr" placeholder="Click Through Rate"> %</div>
+					<div class="fleft"><div class="question">Number of content items</div><input class="medium" type="text" name="numberofitems" placeholder="Number of content items"></div>					
+					<div class="fleft"><div class="question">Number of <strong>Core</strong> content items</div><input class="medium" type="text" name="numberofcoreitems" placeholder="Number of core content items"></div>					
+					<div class="fleft"><div class="question">Relevancy score</div><input class="medium" type="text" name="relevancy" placeholder="Relevancy score"> %</div>					
+					<div style="clear:both;"></div>
+				</div>				
+				
+				<div class="buttongroup">
+					<button class="remodal-cancel back">Back</button>
+					<button class="remodal-confirm" id="save-email">Save</button>
+				</div>
+			</div>
+
+			<div class="panel4" id="4">
+				<h2>Thank you</h2>
+				<div class="questions">
+					<div class="thanks"><p>Your email activity has been saved.</p></div>
+				</div>
+				<div class="buttongroup">
+					<button data-remodal-action="confirm" class="remodal-confirm">Finish</button>
+				</div>
+			</div>				
+		</div>
+	</div>
+</div>
+
+<div class="remodal remodal-intranet" data-remodal-id="intranet">
+	<button data-remodal-action="close" class="remodal-close"></button>
+	<div class="content">
+		<div class="innercontent">
+			<div class="activitytypeicon"><img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/3.png" /></div>		
+			<h1>Intranet activity</h1>
+			<div class="panel1" id="1">
+				<div class="progress">Step 1 of 2</div>
+				<h2>Tell us about your intranet activity</h2>
+				<div class="questions">
+					<div class="question" style="float: left;padding: 11px 14px 0 0;">Scope of data</div><div class="buselectorplaceholder" style="float:left;"></div>
+					<div style="clear:both;"></div>
+					<div class="question"></div><input class="medium" type="text" name="date" id="datepicker3" placeholder="Select the last day of the data's month?">
+					<div style="clear:both;"></div>
+					<div class="question">Optional Notes</div><textarea name="notes" cols="38" rows="5"></textarea>
+					<div style="clear:both;"></div>
+				</div>
+				<div class="buttongroup">
+					<button class="remodal-confirm next">Next</button>
+				</div>
+			</div>
+			<div class="panel2" id="2">
+				<div class="progress">Step 2 of 2</div>
+				<h2>Tell us how it went</h2>
+				<div class="questions">
+					<div class="fleft"><div class="question">Maximum audience</div><input class="medium" type="text" name="maxaudience" placeholder="What's your audience size?"></div>
+					<div class="fleft"><div class="question">How many pages house "core" content?</div><input class="medium" type="text" name="corecontentnumber" placeholder="Number of pages?"></div>
+					<div class="fleft"><div class="question">On those pages, how many page views</div><input class="medium" type="text" name="pageviews" placeholder="Page views?"></div>
+					<div class="fleft"><div class="question">Unique visitors on core content</div><input class="medium" type="text" name="uniquevisitors" placeholder="Unique visitors?"></div>
+					<div class="fleft"><div class="question">Average time on core content (secs)</div><input class="medium" type="text" name="averagetime" placeholder="Average time on core content?"></div>					
+					<div style="clear:both;"></div>
+				</div>
+				<div class="buttongroup">
+					<button class="remodal-cancel back">Back</button>
+					<button class="remodal-confirm" id="save-intranet">Save</button>
+				</div>
+			</div>
+			<div class="panel3" id="3">
+				<h2>Thank you</h2>
+				<div class="questions">
+					<div class="thanks"><p>Your intranet activity has been saved.</p></div>
+				</div>
+				<div class="buttongroup">
+					<button data-remodal-action="confirm" class="remodal-confirm">Finish</button>
+				</div>
+			</div>			
+		</div>
+	</div>
+</div>
+
+<div class="remodal remodal-news" data-remodal-id="news">
+	<button data-remodal-action="close" class="remodal-close"></button>
+	<div class="content">
+		<div class="innercontent">
+			<div class="activitytypeicon"><img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/4.png" /></div>		
+			<h1>News article</h1>
+			<div class="panel1" id="1">
+				<div class="progress">Step 1 of 2</div>
+				<h2>Tell us about your news article</h2>
+				<div class="questions">
+					<div class="question" style="float: left;padding: 11px 14px 0 0;">Scope of story</div><div class="buselectorplaceholder" style="float:left;"></div>
+					<div class="question"></div><input class="long" type="text" name="article" placeholder="News article title">
+					<div class="question"></div><input class="medium" type="text" name="date" id="datepicker4" placeholder="When did you publish the story?">
+					<div style="clear:both;"></div>
+					<div class="fleft"><div class="question">Topics/Themes <span style="font-style:italic;">(one per line)</span></div><textarea name="topics" cols="38" rows="5"></textarea></div>					
+					<div class="fleft" style="padding-left:18px;"><div class="question">Optional Notes</div><textarea name="notes" cols="38" rows="5"></textarea></div>
+					<div style="clear:both;"></div>
+				</div>
+				<div class="buttongroup">
+					<button class="remodal-confirm next">Next</button>
+				</div>
+			</div>
+			<div class="panel2" id="2">
+				<div class="progress">Step 2 of 2</div>
+				<h2>Tell us how it went</h2>
+				<div class="questions">
+					<div class="fleft"><div class="question">Maximum audience</div><input class="medium" type="text" name="maxaudience" placeholder="How many people did you target?"></div>
+					<div class="fleft"><div class="question">Page views</div><input class="medium" type="text" name="pageviews" placeholder="How many page views?"></div>
+					<div class="fleft"><div class="question">Unique visitors</div><input class="medium" type="text" name="uniquevisitors" placeholder="How many unique visitors?"></div>
+					<div class="fleft"><div class="question">Average time on story (secs)</div><input class="medium" type="text" name="averagetime" placeholder="Average time on story?"></div>					
+					<div style="clear:both;"></div>
+				</div>
+				<div class="buttongroup">
+					<button class="remodal-cancel back">Back</button>
+					<button class="remodal-confirm" id="save-news">Save</button>
+				</div>
+			</div>
+			<div class="panel3" id="3">
+				<h2>Thank you</h2>
+				<div class="questions">
+					<div class="thanks"><p>Your news story has been saved.</p></div>
+				</div>
+				<div class="buttongroup">
+					<button data-remodal-action="confirm" class="remodal-confirm">Finish</button>
+				</div>
+			</div>			
+		</div>
+	</div>
+</div>
+
+<div class="remodal remodal-survey" data-remodal-id="survey">
+	<button data-remodal-action="close" class="remodal-close"></button>
+	<div class="content">
+		<div class="innercontent">
+			<div class="activitytypeicon"><img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/5.png" /></div>		
+			<h1>Survey data</h1>
+			<div class="panel1" id="1">
+				<div class="progress">Step 1 of 3</div>
+				<h2>Who is this for?</h2>
+				<div class="questions">
+					<div class="question" style="float: left;padding: 11px 14px 0 0;">Scope of survey data</div><div class="buselectorplaceholder" style="float:left;"></div>
+					<div class="question"></div><input class="medium" type="text" name="date" id="datepicker5" placeholder="When did the survey happen?"><div class="helper"><strong>Note:</strong> Survey data lasts for 4 months</div>
+					<div style="clear:both;"></div>
+					<div class="question">Optional Notes</div><textarea name="notes" cols="38" rows="5"></textarea>
+					<div style="clear:both;"></div>
+				</div>
+				<div class="buttongroup">
+					<button class="remodal-confirm next">Next</button>
+				</div>
+			</div>
+			<div class="panel2" id="2">
+				<div class="progress">Step 2 of 3</div>
+				<h2>What did the survey tell you?</h2>
+				<div class="questions">
+					<div class="fleft"><input class="medium" type="text" name="survey1" placeholder="%"><div class="question">1. My manager regularly holds development and career conversations with me</div></div>
+					<div class="fleft"><input class="medium" type="text" name="survey2" placeholder="%"><div class="question">2. I have the confidence that GSK has what it takes to beat the competition in the medium to long term</div></div>
+					<div class="fleft"><input class="medium" type="text" name="survey3" placeholder="%"><div class="question">3. I feel my business is ambitious</div></div>
+					<div class="fleft"><input class="medium" type="text" name="survey4" placeholder="%"><div class="question">4. I enjoy my work</div></div>
+					<div class="fleft"><input class="medium" type="text" name="survey5" placeholder="%"><div class="question">5. We celebrate success regularly</div></div>
+					<div style="clear:both;"></div>
+				</div>
+				<div class="buttongroup">
+					<button class="remodal-cancel back">Back</button>
+					<button class="remodal-confirm next">Next</button>
+				</div>
+			</div>
+			<div class="panel3" id="3">
+				<div class="progress">Step 3 of 3</div>
+				<h2>What did the survey tell you?</h2>
+				<div class="questions">
+					<div class="fleft"><input class="medium" type="text" name="survey6" placeholder="%"><div class="question">6. Considering everything I am satisfied with GSK at present</div></div>
+					<div class="fleft"><input class="medium" type="text" name="survey7" placeholder="%"><div class="question">7. I am proud to work for GSK</div></div>
+					<div class="fleft"><input class="medium" type="text" name="survey8" placeholder="%"><div class="question">8. I rarely think about looking for a new job with a another company</div></div>
+					<div class="fleft"><input class="medium" type="text" name="survey9" placeholder="%"><div class="question">9. I would recommend GSK as a great place to work</div></div>
+					<div class="fleft"><input class="medium" type="text" name="survey10" placeholder="%"><div class="question">10. Leaders in GSK communicate a vision of the future that motivates me</div></div>
+					<div style="clear:both;"></div>
+				</div>
+				<div class="buttongroup">
+					<button class="remodal-cancel back">Back</button>
+					<button class="remodal-confirm" id="save-survey">Save</button>
+				</div>
+			</div>			
+			<div class="panel4" id="4">
+				<h2>Thank you</h2>
+				<div class="questions">
+					<div class="thanks"><p>Your survey data has been saved.</p></div>
+				</div>
+				<div class="buttongroup">
+					<button data-remodal-action="confirm" class="remodal-confirm">Finish</button>
+				</div>
+			</div>			
+		</div>
+	</div>
+</div>
+
+<div class="remodal remodal-learn" data-remodal-id="learn">
+	<button data-remodal-action="close" class="remodal-close"></button>	
+	<div class="content">
+		<div class="innercontent">
+			<div class="activitytypeicon"><img src="https://connect.gsk.com/sites/Cx/Documents/DigitalComms/Measurement%20Framework/img/into.png" /></div>	
+			<h1>The Measurement Framework</h1>
+			<div class="panel1" id="1">
+				<h2>Welcome ICLT!</h2>
+				<p class="topmargin">This measurement framework has been created help us measure bigger, more complex outcomes than simply looking data and how our specific tactics have performed.  This day-to-day data is still important, and we'll certainly want to capture it but this framework aims to simplify the things we measure and ensures we do it consistently.  </p>
+				<p>Following this framework will allow us to:</p>
+				<ul>
+					<li><strong>Have visibility</strong> on the activities we're all delivering at various levels in the organisation</li>
+					<li>Make it easy <strong>to compare our activity</strong> with other locations and business units</li>
+					<li>Understand how this activity all rolls up to <strong>contribute to our priority outcomes</strong> (currently engagement measures)</li>
+				</ul>
+				<p>If you have any questions about this framework or how we plan on using it, please contact your local measurement champion within each business unit.</p>
+				<div class="buttongroup">
+					<button data-remodal-action="confirm" class="remodal-confirm">Let's get started</button>
+				</div>	
+			</div>
+	</div>
+</div>	
+
+<div id="tempholder"></div>
